@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+:root {
+    --violet: #883AE1;
+    --span-bg: #E6D6FC;
+    --light-grey: #E5EAF0;
+    --main-bg: #FAFAF9;
+    --white: #fff;
+    --dark: #20293A;
+    --dark-grey: #6C727F;
+
+    --title-size: 18px;
+    --p-size: 14px;
+    --span-size: 12px;
+    --footer-size: 10px;
+
+    --family: "Sora", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: var(--family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (min-width: 560px) {
+    main {
+        width: 500px !important;
+    }
+}
+main {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: calc(100% - 60px);
+}
+header {
+    margin: 30px 20px;
+    overflow: hidden;
+}
+header img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+section {
+    margin: 30px 20px;
+}
+section span {
+    display: block;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: var(--span-bg);
+    color: var(--violet);
+    text-transform: capitalize;
+    font-size: var(--span-size);
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section h1 {
+    font-size: var(--title-size);
+    color: var(--dark);
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+section p {
+    font-size: var(--p-size);
+    color: var(--dark-grey);
+    line-height: 20px;
+
+}
+
+footer {
+    border-top: 1px solid var(--light-grey);
+    padding: 30px 20px;
+    font-size: var(--footer-size);
+    color: var(--dark-grey);
+    text-transform: capitalize;
+}
